@@ -2,6 +2,10 @@
 记录FSD联飞机组/管制员在线时间
 使用nodejs 、TypeScript制作
 
+<strong>
+请在使用前点个star
+</strong>
+
 ## How to use?
 
 1、clone this repository
