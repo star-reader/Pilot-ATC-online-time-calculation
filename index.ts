@@ -41,7 +41,7 @@ function checkExisted(): void{
             data.updated_time = getTimeStamp()
         }else{
             if (getTimeStamp() - data.updated_time > 4000){
-                let url = `https://api.skylineflyleague.cn/efb/main/GetOnlineDuration.php?cid=${data.cid}&time=${calcOnlineTime(data)}&type=p&last=${data.callsign} ${data.dep}——>${data.arr} ${(parseFloat(calcOnlineTime(data))/3600).toFixed(1)}h`
+                let url = `your API url path`
                 axios.post(url).then( res =>{
                     console.log(`pilot ${data.cid} offline, updated to database`)   
                 }).catch(e =>{
@@ -56,7 +56,7 @@ function checkExisted(): void{
             data.updated_time = getTimeStamp()
         }else{
             if (getTimeStamp() - data.updated_time > 4000){
-                let url = `https://api.skylineflyleague.cn/efb/main/GetOnlineDuration.php?cid=${data.cid}&time=${calcOnlineTime(data)}&type=a&last=${data.callsign} ${(parseFloat(calcOnlineTime(data))/3600).toFixed(1)}h`
+                let url = `your API url path`
                 axios.post(url).then( res =>{
                     console.log(`atc ${data.cid} offline, updated to database`)   
                 }).catch(e =>{
